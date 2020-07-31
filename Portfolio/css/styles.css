@@ -104,7 +104,7 @@ body {
 
     #flyoutMenu.show {
         transform: translate3d(0vw, 0, 0);
-        position: fixed; /*Sticky fixes it but causes position bug*/
+        position: relative; /*Sticky fixes it but causes position bug*/
     }
 
 .navElement {
