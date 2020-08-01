@@ -5,6 +5,9 @@
 
     <title>Julius Shipton</title>
 
+    <!--meta so it still looks good on mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!--Bootstrap and JQuery Links-->
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <script src="Scripts/jquery-3.5.1.min.js"></script>
@@ -17,15 +20,16 @@
 </head>
 <body>
 
+    <!--Page Loader-->
     <div class="loader-wrapper">
         <div class="loader">
-
         </div>
     </div>
 
-    <!-- Header and Navigation-->
-    <header class="container">
-        <div class="customNavbar">
+    <div id="mainContent">
+        <!-- Header and Navigation-->
+        <header>
+            <div id="customNavbar">
                 <button id="roundButton"></button>
                 <div id="flyoutMenu">
                     <ul>
@@ -39,109 +43,111 @@
                 </div>
 
                 <a href="images/Resume.pdf" target="_blank" class="resumeBtn">RESUME</a>
-        </div>
-    </header>
-
-    <!--Info-->
-    <div class="container">
-        <div class="mainContentSpacing">
-            <div class="info">
-                
-                <div class="row">
-
-                    <!--Filler Col-->
-                    <div class="col-md-2"></div>
-
-                    <!--Description-->
-                    <div class="col-md-4">
-                        <div class="infoCard">
-                            <h1 class="infoSpacing">Julius Shipton</h1>
-                            <p class="description">Description here, something like Full time student Overtime Entreprenuer, former junior developer at microsoft.</p>
-                        </div>
-                    </div>
-
-                    <!--ProfilePic-->
-                    <div class="col-md-4">
-                        <div class="infoPic">
-                            <a href="images/Resume.pdf" target="_blank"><img src="images/Profile.jpg" class="profilePic" /></a>
-                        </div>
-                    </div>
-
-                    <!--Filler Col-->
-                    <div class="col-md-2"></div>
-
-                </div>
-
             </div>
-        </div>
-    </div>
+        </header>
 
-    <!--Experience-->
-    <div class="container">
-        <div class="mainContentSpacing">
-            <div class="blankSection">
-                <h1>Experience</h1>
-            </div>
-        </div>
-    </div>
-
-
-    <!--Projects-->
-    <div class="container">
-        <div class="mainContentSpacing">
-            <div class="blankSection">
-                <h1>Projects</h1>
-            </div>
-        </div>
-    </div>
-
-    <!--Skills-->
-    <div class="container">
-        <div class="mainContentSpacing">
-            <div class="blankSection">
-                <h1>Skills</h1>
-            </div>
-        </div>
-    </div>
-
-    <!--Education-->
-    <div class="container">
-        <div class="mainContentSpacing">
-            <div class="blankSection">
-                <h1>Education</h1>
-            </div>
-        </div>
-    </div>
-
-    <!--Contact Footer-->
-    <footer>
-
-        <!--Spacing and links-->
+        <!--Info-->
         <div class="container">
+            <div class="mainContentSpacing">
+                <div id="info">
 
-            <div class="contactFooter">
+                    <div class="row">
 
-                <div class="contactBar">
+                        <!--Filler Col-->
+                        <div class="col-md-2"></div>
 
-                    <a class="iconSpacing" href="https://www.linkedin.com/in/julius-shipton-2ba497144/" target="_blank">
-                        <img src="../images/icons/linkedin.png" class="iconlinklocal" />
-                    </a>
+                        <!--Description-->
+                        <div class="col">
+                            <div class="description">
+                                <div class="infoCard">
+                                    <h2 class="infoSpacing">Julius Shipton</h2>
+                                    <p>Description here, something like Full time student Overtime Entreprenuer, former junior developer at microsoft.</p>
+                                </div>
+                            </div>
+                        </div>
 
-                    <a class="iconSpacing">
-                        <img src="../images/icons/mail.png" class="iconlinklocal" />
-                    </a>
+                        <!--ProfilePic-->
+                        <div class="col">
+                            <div class="infoPic">
+                                <a href="images/Resume.pdf" target="_blank"><img src="images/Profile.jpg" class="profilePic" /></a>
+                            </div>
+                        </div>
 
-                    <a class="iconSpacing" href="https://github.com/Juliusshipton" target="_blank">
-                        <img src="../images/icons/github.png" class="iconlinklocal" />
-                    </a>
+                        <!--Filler Col-->
+                        <div class="col-md-2"></div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--Experience-->
+        <div class="container">
+            <div class="mainContentSpacing">
+                <div class="blankSection">
+                    <h1>Experience</h1>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Projects-->
+        <div class="container">
+            <div class="mainContentSpacing">
+                <div class="blankSection">
+                    <h1>Projects</h1>
+                </div>
+            </div>
+        </div>
+
+        <!--Skills-->
+        <div class="container">
+            <div class="mainContentSpacing">
+                <div class="blankSection">
+                    <h1>Skills</h1>
+                </div>
+            </div>
+        </div>
+
+        <!--Education-->
+        <div class="container">
+            <div class="mainContentSpacing">
+                <div class="blankSection">
+                    <h1>Education</h1>
+                </div>
+            </div>
+        </div>
+
+        <!--Contact Footer-->
+        <footer>
+
+            <!--Spacing and links-->
+            <div class="container">
+
+                <div class="contactFooter">
+
+                    <div class="contactBar">
+
+                        <a class="iconSpacing" href="https://www.linkedin.com/in/julius-shipton-2ba497144/" target="_blank">
+                            <img src="../images/icons/linkedin.png" class="iconlinklocal" />
+                        </a>
+
+                        <a class="iconSpacing">
+                            <img src="../images/icons/mail.png" class="iconlinklocal" />
+                        </a>
+
+                        <a class="iconSpacing" href="https://github.com/Juliusshipton" target="_blank">
+                            <img src="../images/icons/github.png" class="iconlinklocal" />
+                        </a>
+                    </div>
+
                 </div>
 
             </div>
+        </footer>
 
-        </div>
-    </footer>
-
-
+    </div>
 </body>
 
 </html>
