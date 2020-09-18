@@ -4,20 +4,19 @@ body {
     background-color:black;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .mainContentSpacing {
     padding-top:200px;
     padding-bottom: 50px;
 }
 
 #customNavbar {
-    
     width: 100%;
-    padding-right: 20%;
-    padding-left: 20%;
-    margin-right: auto;
-    margin-left: auto;
-
-
+    padding-right: 20vw;
+    padding-left: 20vw;
     background-color: black;
     padding-top: 30px;
     padding-bottom: 10px;
@@ -43,6 +42,26 @@ body {
     #info:hover {
         opacity:1;
     }
+
+
+.experience {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: darkmagenta;
+}
+
+
+.projects {
+    background-color: #0080ff;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
 
 .blankSection {
     padding-top: 100px;
@@ -120,6 +139,7 @@ body {
     }
 
 .navElement {
+    all: unset;
     color: #333;
     margin-left: 15px;
     text-decoration: none;
@@ -130,8 +150,11 @@ body {
 }
 
     .navElement:hover {
+        color: black;
+        text-decoration:none;
         background-color: #b5a642;
         border-radius: 5px;
+        border-color: black;
     }
 
 /*Resume Button*/
@@ -162,8 +185,8 @@ body {
 /*Contact Footer*/
 .contactFooter {
     text-align:center;
-    padding-top: 100px;
-    padding-bottom: 200px;
+    padding-top: 500px;
+    padding-bottom: 800px;
 }
 
 .contactBar {
@@ -247,6 +270,114 @@ body {
 
 
 
+
+
+/*Project / Flip Card Section*/
+
+.card-spacing {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.flip-card-layout {
+    text-align: center;
+    display: inline-block;
+}
+
+.flip-card {
+    width: 500px;
+    height: 300px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+.flip-card-inner {
+    position: relative;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    padding: 50px;
+    width: 100%;
+    height: 300px;
+    background-color: #dfdfdf;
+}
+
+.flip-card-back {
+    padding: 50px;
+    padding-top: 30px;
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    background-color: #dfdfdf;
+    transform: rotateY(180deg);
+}
+
+.projectDescription {
+    text-align: left;
+}
+
+.projectLinks {
+    float: right;
+}
+
+
+/*Experience Accordion Styling*/
+
+
+.accordionLayout {
+    padding: 50px;
+    padding-top: 100px;
+}
+
+.customAccordion {
+    background-color: #eee;
+    width: 100%;
+    cursor: pointer;
+    padding: 50px;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+    .active, .customAccordion:hover {
+        background-color: #ccc;
+    }
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    max-height: 0;
+    transition: 0.3s;
+}
+
+.jobDescription {
+    text-align: left;
+    padding: 20px;
+}
+
+
+/*Skill Icon Styling*/
+
+.skillIcons {
+    padding-top: 50px;
+}
+
+
 /*All styling for collaps on small screen*/
 @media screen and (max-width:1000px) {
 
@@ -260,6 +391,13 @@ body {
     /*Used to center and adjust info*/
     .row {
         display: inline-block;
+        text-align: center;
+    }
+
+    .col {
+        display: inline-block;
+        position: center;
+        width: 80%;
     }
 
     .infoPic {
@@ -269,5 +407,33 @@ body {
 
     #info {
         height: 800px;
+    }
+
+    /*Fixes Project Card Layout Spacing*/
+    .flip-card {
+        width: 300px;
+        height: 500px;
+        perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    }
+
+    .flip-card-front {
+        width: 100%;
+        height: 500px;
+    }
+
+    .flip-card-back {
+        width: 100%;
+        height: 500px;
+    }
+
+}
+
+
+
+
+/*Used to fix content off of card on mobile*/
+@media screen and (max-width:400px) {
+    .infoCard {
+        height: 400px;
     }
 }
